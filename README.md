@@ -1,3 +1,3 @@
 ﻿# TP1 - MIA
-## RAG con memoria utilizando OpenIA, Pinecode, langchain y Streamlit
+## RAG con memoria utilizando OpenIA, Pinecone, Langchain y Streamlit
 
