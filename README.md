@@ -9,4 +9,4 @@
 ## Agentes utilizando OpenIA, Pinecone, Langchain, LangGraph y Streamlit
 ##### El agente es capaz de responder preguntas sobre 3 CV que tiene precargados en Pinecone, a nombre de Laura, Marcos y Juan. Cada uno de estos CV es manegado por un agente. Es necesario ser explicito en la pregunta con los nombres de las personas que se desea consultar. En caso que no exista ningun nombre, responde por el CV de Juan.
 
-![Estructura del grafo](tp2_agent.jpg)
+![Estructura del grafo](tp2_agent_diagrama.jpg)
