@@ -79,7 +79,7 @@ Cuando el usuario ingresa una pregunta:
 
 ---
 
-# 🧠 Asistente de Estrategia Empresarial
+# 🧠 TP3 - Asistente de Estrategia Empresarial
 
 Este proyecto implementa un sistema basado en agentes capaces de colaborar para responder preguntas relacionadas con la estrategia de lanzamiento y gestión de productos en el mercado.
 
@@ -136,3 +136,5 @@ El flujo de agentes y decisiones del sistema está representado en el siguiente 
 - ¿Qué estrategia de marketing me recomiendan para un producto tecnológico?
 - ¿Cómo puedo organizar la distribución de un nuevo producto en diferentes regiones?
 - ¿Me podés explicar cómo resolver una ecuación matemática? _(En este caso el sistema indicará que no está preparado para responder)_
+
+---
