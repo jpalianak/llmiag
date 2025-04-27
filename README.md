@@ -1,18 +1,85 @@
-﻿# TP1 - MIA
-## RAG con memoria utilizando OpenIA, Pinecone, Langchain y Streamlit
+﻿# 📚 TP1 - Sistema RAG con Memoria
 
-##### 1) El RAG permite generar embeddings en Pinecone a partir de un pdf. Para ellos es necesario configurar, ademas del nombre del archivo, los parametros del split dentro de la funcion main_embeddings()
-##### 2) Con la funcion main_request() se ejecuta Streamlit local para realizar la consulta. Ademas de la respuesta, devuelve el contexto y el historial.
+Este proyecto implementa un sistema de recuperación aumentada con generación (RAG) utilizando embeddings creados a partir de documentos PDF, permitiendo realizar consultas contextuales sobre el contenido.
 
+---
 
-# TP2 - MIA
-## Agentes utilizando OpenIA, Pinecone, Langchain, LangGraph y Streamlit
-##### El agente es capaz de responder preguntas sobre 3 CV que tiene precargados en Pinecone, a nombre de Laura, Marcos y Juan. Cada uno de estos CV es manegado por un agente. Es necesario ser explicito en la pregunta con los nombres de las personas que se desea consultar. En caso que no exista ningun nombre, responde por el CV de Juan.
+## 🚀 ¿Cómo funciona?
 
-![Estructura del grafo](tp2_agent_diagrama.jpg)
+Cuando el usuario carga un documento:
 
-# TP3 - MIA
-# 🧠 Asistente de Estrategia Empresarial
+1. Se generan embeddings a partir del contenido del PDF, utilizando OpenAI.
+2. Los embeddings se almacenan en Pinecone para consultas futuras.
+3. A través de la aplicación en Streamlit, el usuario puede hacer preguntas relacionadas al documento.
+4. El sistema responde basándose en el contexto recuperado del documento y muestra además el historial de conversación.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Python 3
+- OpenAI API (text-embedding-ada-002)
+- Pinecone
+- Langchain
+- Streamlit
+
+---
+
+## 📋 Funcionalidades principales
+
+- Carga de nuevos documentos y generación de embeddings (`main_embeddings()`).
+- Consulta interactiva con recuperación de contexto (`main_request()`).
+- Visualización del historial de respuestas.
+
+---
+
+# 👥 TP2 - Agentes de Consulta sobre Currículums
+
+Este proyecto desarrolla un sistema multiagente que responde preguntas específicas sobre tres perfiles laborales almacenados en Pinecone.
+
+---
+
+## 🚀 ¿Cómo funciona?
+
+Cuando el usuario ingresa una pregunta:
+
+1. El sistema analiza la pregunta para identificar a qué persona (Laura, Marcos o Juan) hace referencia.
+2. Activa el agente correspondiente para responder en base al currículum almacenado.
+3. Si no se detecta ningún nombre, el sistema responde utilizando por defecto el CV de Juan.
+
+---
+
+## 🧩 Agentes disponibles
+
+- **Agente Laura**:  
+  Especializado en el perfil profesional de Laura.
+
+- **Agente Marcos**:  
+  Especializado en el perfil profesional de Marcos.
+
+- **Agente Juan**:  
+  Especializado en el perfil profesional de Juan (también responde por defecto si no se especifica un nombre).
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Python 3
+- OpenAI API
+- Pinecone
+- Langchain
+- LangGraph
+- Streamlit
+
+---
+
+## 🖼️ Diagrama del flujo de agentes
+
+![Estructura del grafo TP2](tp2_agent_diagrama.jpg)
+
+---
+
+# 🧠 TP3 - Asistente de Estrategia Empresarial
 
 Este proyecto implementa un sistema basado en agentes capaces de colaborar para responder preguntas relacionadas con la estrategia de lanzamiento y gestión de productos en el mercado.
 
@@ -59,5 +126,6 @@ Cuando el usuario ingresa una pregunta, el sistema:
 - ¿Cómo lanzar un nuevo producto al mercado?
 - ¿Qué estrategia de marketing me recomiendan para un producto tecnológico?
 - ¿Cómo puedo organizar la distribución de un nuevo producto en diferentes regiones?
-- ¿Me podés explicar cómo resolver una ecuación matemática? _(En este caso el sistema indicará que no está preparado para responder)_
+- ¿Me podés explicar cómo resolver una ecuación matemática? _(En este caso el sistema indicará que no está preparado para responder)
 
+---
