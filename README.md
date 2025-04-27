@@ -1,4 +1,4 @@
-﻿# TP1 - Sistema RAG con Memoria
+﻿# 📚 TP1 - Sistema RAG con Memoria
 
 Este proyecto implementa un sistema de recuperación aumentada con generación (RAG) utilizando embeddings creados a partir de documentos PDF, permitiendo realizar consultas contextuales sobre el contenido.
 
@@ -33,7 +33,7 @@ Cuando el usuario carga un documento:
 
 ---
 
-# TP2 - Agentes de Consulta sobre Currículums
+# 👥 TP2 - Agentes de Consulta sobre Currículums
 
 Este proyecto desarrolla un sistema multiagente que responde preguntas específicas sobre tres perfiles laborales almacenados en Pinecone.
 
@@ -79,7 +79,7 @@ Cuando el usuario ingresa una pregunta:
 
 ---
 
-# TP3 - Asistente de Estrategia Empresarial
+# 🧠 Asistente de Estrategia Empresarial
 
 Este proyecto implementa un sistema basado en agentes capaces de colaborar para responder preguntas relacionadas con la estrategia de lanzamiento y gestión de productos en el mercado.
 
@@ -99,16 +99,16 @@ Cuando el usuario ingresa una pregunta, el sistema:
 
 ## 🧩 Agentes disponibles
 
-- **Agente de Mercado**:  
+- **Agente de Mercado**  
   Especialista en análisis de tendencias de mercado, comportamiento del consumidor y evaluación de la competencia.
 
-- **Agente de Marketing**:  
+- **Agente de Marketing**  
   Especialista en estrategias de promoción, segmentación de clientes y tácticas de comunicación comercial.
 
-- **Agente de Distribución**:  
+- **Agente de Distribución**  
   Especialista en planificación de canales de distribución, logística comercial y expansión a nuevos mercados.
 
-- **Agente Sin-Especialización**:  
+- **Agente Sin-Especialización**  
   Responde cuando la pregunta no corresponde a ninguna de las áreas anteriores.
 
 ---
@@ -118,6 +118,15 @@ Cuando el usuario ingresa una pregunta, el sistema:
 - Python 3
 - OpenAI API (gpt-3.5-turbo)
 - Streamlit
+- LangGraph
+
+---
+
+## 🖇️ Estructura del sistema
+
+El flujo de agentes y decisiones del sistema está representado en el siguiente diagrama:
+
+![Estructura del grafo](tp3_razonamiento_diagrama.jpg)
 
 ---
 
@@ -126,6 +135,4 @@ Cuando el usuario ingresa una pregunta, el sistema:
 - ¿Cómo lanzar un nuevo producto al mercado?
 - ¿Qué estrategia de marketing me recomiendan para un producto tecnológico?
 - ¿Cómo puedo organizar la distribución de un nuevo producto en diferentes regiones?
-- ¿Me podés explicar cómo resolver una ecuación matemática? _(En este caso el sistema indicará que no está preparado para responder)
-
----
+- ¿Me podés explicar cómo resolver una ecuación matemática? _(En este caso el sistema indicará que no está preparado para responder)_
