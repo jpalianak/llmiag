@@ -1,4 +1,4 @@
-﻿# 📚 TP1 - Sistema RAG con Memoria
+﻿# TP1 - Sistema RAG con Memoria
 
 Este proyecto implementa un sistema de recuperación aumentada con generación (RAG) utilizando embeddings creados a partir de documentos PDF, permitiendo realizar consultas contextuales sobre el contenido.
 
@@ -33,7 +33,7 @@ Cuando el usuario carga un documento:
 
 ---
 
-# 👥 TP2 - Agentes de Consulta sobre Currículums
+# TP2 - Agentes de Consulta sobre Currículums
 
 Este proyecto desarrolla un sistema multiagente que responde preguntas específicas sobre tres perfiles laborales almacenados en Pinecone.
 
@@ -79,7 +79,7 @@ Cuando el usuario ingresa una pregunta:
 
 ---
 
-# 🧠 TP3 - Asistente de Estrategia Empresarial
+# TP3 - Asistente de Estrategia Empresarial
 
 Este proyecto implementa un sistema basado en agentes capaces de colaborar para responder preguntas relacionadas con la estrategia de lanzamiento y gestión de productos en el mercado.
 
